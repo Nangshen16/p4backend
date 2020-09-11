@@ -1,1 +1,1 @@
-web:gunicorn p4backend.wsgi
+web: gunicorn p4backend.wsgi
