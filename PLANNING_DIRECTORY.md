@@ -5,11 +5,12 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Project Description | Complete
-|Day 1| Wireframes / Priority Matrix / Timeline `backend` and `frontend`| Incomplete
-|Day 2| Working RestAPI | Incomplete
-|Day 3| Core Application Structure(Vue) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches and Present | Incomplete
+|Day 1| Priority Matrix / Timeline `backend`| Incomplete
+|Day 1| Create app and congigure JWT | Incomplete
+|Day 2| Set up models | Incomplete
+|Day 3| Set up views | Incomplete
+|Day 3| Set up routes| Incomplete
+|Day 5| Test the endpoints/routes/CRUD | Incomplete
 
 ## Project Description
 
@@ -32,7 +33,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ## Time/Priority Matrix 
 
-Full list of features that have been prioritized based on the [Time and Priority Matrix](https://res.cloudinary.com/wjclavell/image/upload/v1600025693/P4/P4-backend-TPM.png)
+Full list of features that have been prioritized based on the [Time and Priority Matrix]()
 
 ### MVP/PostMVP
 
