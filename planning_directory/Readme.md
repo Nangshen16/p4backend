@@ -24,16 +24,26 @@ In future features, users will be able to:
 - log in using social media accounts
 - select dates 
 
-## Wireframes
+## Description of Models
+User
+- username
+- password
+- has many recipes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
+Recipe
+- title
+- description
+- cuisine
+- has many ingredients
 
-- [Mobile](https://res.cloudinary.com/dcrioc0sw/image/upload/v1600054717/Screen_Shot_2020-09-13_at_11.38.19_PM_sst4a9.png)
-- [Desktop](https://res.cloudinary.com/dcrioc0sw/image/upload/v1600055281/Screen_Shot_2020-09-13_at_11.47.42_PM_vawxrm.png)
+Ingredient
+- title
+- serving
+- direction
 
 ## Time/Priority Matrix 
 
-Full list of features that have been prioritized based on the [Time and Priority Matrix]()
+Full list of features that have been prioritized based on the [Time and Priority Matrix](https://res.cloudinary.com/dcrioc0sw/image/upload/v1600131383/Screen_Shot_2020-09-14_at_8.55.55_PM_xnn5rc.png)
 
 ### MVP/PostMVP
 
@@ -42,7 +52,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP
 
 - Authentication
-- User model (name, email, username, password)
+- User model (username, password)
 - Recipes model (ingredients )
 - Ingredients model (title,directions,servings)
 - Routes
@@ -66,13 +76,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Authentication | H | 1hr | -hr | -hr|
-|  model | H | 1hr | -hr | -hr|
-|  model | H | 1hr | -hr | -hr|
-|  model | H | 2hr| -hr | -hr |
-|  model| M | 2hr | -hr | -hr|
+| User model | H | 1hr | -hr | -hr|
+| Recipes model | H | 1hr | -hr | -hr|
+| Ingredients model | H | 2hr| -hr | -hr |
+|  View| M | 2hr | -hr | -hr|
 | Routes | H | 5hrs| -hr | -hr |
 | Sign up  | M | 1hr | -hr | -hr|
-| Favorites | M | 2hr | -hr | -hr|
 | Total | - | 15hrs| -hrs | -hrs |
 
 #### PostMVP
@@ -81,7 +90,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Filter | H | 2hr | -hr | -hr|
 | history | M | 4hr | -hr | -hr|
 |  description | M | 2hr | -hr | -hr|
-|  on login | M | 2hr | -hr | -hr|
+|   login | M | 2hr | -hr | -hr|
 | Total | - | 10hrs| -hrs | -hrs |
 
 ## Additional Libraries
