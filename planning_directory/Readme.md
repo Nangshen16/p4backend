@@ -6,7 +6,7 @@
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Priority Matrix / Timeline `backend`| Incomplete
-|Day 1| Create app and congigure JWT | Incomplete
+|Day 1| Create app and configure JWT | Incomplete
 |Day 2| Set up models | Incomplete
 |Day 3| Set up views | Incomplete
 |Day 3| Set up routes| Incomplete
