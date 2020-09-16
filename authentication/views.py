@@ -6,7 +6,9 @@ from rest_framework.permissions import AllowAny
 from .serializers import RegistrationSerializer, LoginSerializer, UserListSerializer
 from .models import User
 class RegistrationAPIView(APIView):
+    print("************registerview")
     permission_classes = (AllowAny,)
+
     serializer_class = RegistrationSerializer
     def post(self, request):
         user = request.data.get('user', {})
