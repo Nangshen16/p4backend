@@ -8,9 +8,9 @@ class RegistrationSerializer(serializers.ModelSerializer):
         min_length=8,
         write_only=True
     )
-    print("***********registerview")
+
     token = serializers.CharField(max_length=255, read_only=True)
-    print(token)
+
     class Meta:
         model = User
         # List all of the fields that could possibly be included in a request
