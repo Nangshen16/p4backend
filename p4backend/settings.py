@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'recipes.apps.RecipesConfig',
     'ingredients.apps.IngredientsConfig',
-    'rest-framework',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
