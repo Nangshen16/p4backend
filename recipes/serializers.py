@@ -6,6 +6,6 @@ from rest_framework import serializers
 class RecipeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Recipe
-        fields = ['title', 'description', 'cuisine', 'ingredients']
+        fields = ['title', 'description', 'cuisine']
 
 

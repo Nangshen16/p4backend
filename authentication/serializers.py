@@ -8,25 +8,23 @@ class RegistrationSerializer(serializers.ModelSerializer):
         min_length=8,
         write_only=True
     )
-
     token = serializers.CharField(max_length=255, read_only=True)
-
     class Meta:
         model = User
         # List all of the fields that could possibly be included in a request
         # or response
-        fields = ('username', 'first_name', 'last_name', 'password', 'token')
+        fields = ('username', 'email', 'first_name', 'last_name', 'password', 'token')
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
 class LoginSerializer(serializers.ModelSerializer):
     """Serializer login requests and signin user"""
-    # email = serializers.CharField(max_length=255, read_only=True)
+    email = serializers.CharField(max_length=255, read_only=True)
     username = serializers.CharField(max_length=255)
     password = serializers.CharField(max_length=255, write_only=True)
     token = serializers.CharField(max_length=255, read_only=True)
     class Meta:
         model = User
-        fields = ('username', 'password', 'token')
+        fields = ('username', 'email', 'password', 'token')
     def validate(self, data):
         username = data.get('username', None)
         password = data.get('password', None)
@@ -53,10 +51,10 @@ class LoginSerializer(serializers.ModelSerializer):
             )
         return {
             "username": user.username,
-            # "email": user.email,
+            "email": user.email,
             "token": user.token
         }
 class UserListSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'username')
+        fields = ('id', 'username', 'email')
