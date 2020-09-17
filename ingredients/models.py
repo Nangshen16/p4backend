@@ -7,8 +7,8 @@ class Ingredient (models.Model):
     category = models.CharField(max_length=100)
     quantity = models.TextField(max_length=1000)
     calories =models.TextField(max_length=100)
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
-
+    #recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+    recipe = models.ForeignKey(Recipe, related_name='ingredients', on_delete=models.CASCADE)
 
 
     class Meta:
