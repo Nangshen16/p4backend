@@ -5,12 +5,12 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Project Description | Complete
-|Day 1| Priority Matrix / Timeline `backend`| Incomplete
-|Day 1| Create app and configure JWT | Incomplete
-|Day 2| Set up models | Incomplete
-|Day 3| Set up views | Incomplete
-|Day 3| Set up routes| Incomplete
-|Day 5| Test the endpoints/routes/CRUD | Incomplete
+|Day 1| Priority Matrix / Timeline `backend`| complete
+|Day 1| Create app and configure JWT | complete
+|Day 2| Set up models | complete
+|Day 3| Set up views | complete
+|Day 3| Set up routes| complete
+|Day 5| Test the endpoints/routes/CRUD | complete
 
 ## Project Description
 
